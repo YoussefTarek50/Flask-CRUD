@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Employee List:</h1>
+    {% for emp in employees %}
+    <div><p>Employee Name: <b>{{ emp.name }}</b><br></p>
+        <p>Employee ID: <b>{{ emp.id }}</b><br></p>
+         <p>Employee Title: <b>{{ emp.title }}</b><br></p>
+         <p>Employee Expreience Years: <b>{{ emp.exp_yrs }}</b><br></p>
+         <p>Employee Salary: $<b>{{ emp.salary }}</b><br></p>
+         <p>Employee Department: <b>{{ emp.department }}</b><br></p>
+         <br>
+    </div>
+    {% endfor %}
+{% endblock %}

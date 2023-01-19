@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Departments List:</h1>
+    {% for dep in departments %}
+    <div><p>Department Name: <b>{{ dep.name }}</b><br></p>
+         <p>Department Manager: <b>{{ dep.dep_manager }}</b><br></p>
+         <br>
+    </div>
+    {% endfor %}
+{% endblock %}
